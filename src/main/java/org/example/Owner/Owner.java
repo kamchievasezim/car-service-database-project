@@ -24,6 +24,7 @@ public class Owner {
     }
 
     public String getOption() {
+        boolean logout = true;
         String option = "null";
         System.out.println("Enter the number from the menu: ");
         String getOption = scanner.next();
@@ -61,7 +62,8 @@ public class Owner {
                 }
                 break;
             case "5":
-                option = "The program is over.";
+                option = "You logout from the account.";
+                logout = false;
                 break;
             default:
                 option = "Invalid input";
